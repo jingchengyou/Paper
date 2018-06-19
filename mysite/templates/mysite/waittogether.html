@@ -1,0 +1,5 @@
+<ul>
+    {% for summary in story_summary %}
+        <li><a href="{% url 'story:book_summary' summary.title %}">{{ summary }}</a></li>
+    {% endfor %}
+</ul>

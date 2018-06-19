@@ -1,0 +1,71 @@
+{% extends "mysite/base.html" %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            {% include "mysite/storysummary.html" %}
+            <div class="col-xs-6 col-md-4">
+
+                <p>
+                    <a href="{% url "story:add_group" title %}"><button type="button" class="btn btn-danger">加入团队</button></a>
+                </p>
+                <p>
+                    <button type="button" class="btn btn-danger">加书架 <span class="glyphicon glyphicon glyphicon-tasks"
+                                                                           aria-hidden="true"></span></button>
+                </p>
+                <p>
+                    <a href="{% url "story:catalog" %}"> <button type="button" class="btn btn-danger">查看目录</button></a>
+                </p>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-12">
+                <div class="panel panel-warning">
+                    <div class="panel-heading">小说团队简介</div>
+                    <div class="panel-body">
+                        {% include "mysite/teaminfo.html" %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-12">
+                <div class="panel panel-warning">
+                    <div class="panel-heading">小说贡献排行榜</div>
+                    <div class="panel-body">
+                        <table class="table table-hover">
+                            <tr>
+                                <th>姓名</th>
+                                <th>贡献字数</th>
+                                <th>贡献百分比</th>
+                            </tr>
+                            <tr>
+                                <td>辰东</td>
+                                <td>20万</td>
+                                <td>30%</td>
+                            </tr>
+                            <tr>
+                                <td>唐家三少</td>
+                                <td>20万</td>
+                                <td>30%</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-12">
+                <div class="panel panel-warning">
+                    <div class="panel-heading">小说热门评论</div>
+                    <div class="panel-body">
+                        {% include "mysite/hotcomment.html" %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,33 @@
+{% extends "mysite/base.html" %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            {% include "mysite/storysummary.html" %}
+            <div class="col-xs-6 col-md-4">
+
+                <p>
+                    <button type="button" class="btn btn-danger">加入团队</button>
+                </p>
+                <p>
+                    <button type="button" class="btn btn-danger">加书架 <span class="glyphicon glyphicon glyphicon-tasks"
+                                                                           aria-hidden="true"></span></button>
+                </p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-12">
+                <div class="panel panel-warning">
+                    <div class="panel-heading">圣墟-章节</div>
+                    <div class="panel-body">
+                        {% include "mysite/template_catalog.html" %}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
+

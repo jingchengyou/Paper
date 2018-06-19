@@ -1,0 +1,6 @@
+<ul>
+    {% for catalog in catalog_list %}
+        <li style="width: 250px; height: 30px; padding-right: 60px; overflow: hidden; float: left"><a
+                href="{% url 'story:content' %}">{{ catalog }}</a></li>
+    {% endfor %}
+</ul>

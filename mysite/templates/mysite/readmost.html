@@ -1,0 +1,17 @@
+<ul>
+    {% for story in story_list %}
+        <li><a href="{% url 'story:book_summary' story.title %}">{{ story }}</a></li>
+    {% endfor %}
+</ul>
+{#<li>圣墟</li>#}
+{#    <li>天下无贼</li>#}
+{#    <li>张三丰异界游</li>#}
+{#    <li>圣墟</li>#}
+{#    <li>天下无贼</li>#}
+{#    <li>张三丰异界游</li>#}
+{#    <li>圣墟</li>#}
+{#    <li>天下无贼</li>#}
+{#    <li>张三丰异界游</li>#}
+{#    <li>圣墟</li>#}
+{#    <li>天下无贼</li>#}
+{#    <li>张三丰异界游</li>#}

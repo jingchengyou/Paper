@@ -1,0 +1,16 @@
+{% load static %}
+<div class="col-xs-12 col-sm-6 col-md-2">
+    <img src="{% static 'mysite/img/天道图书馆.jpg' %}" alt="小说封面" class="img-thumbnail img-responsive center-block">
+</div>
+<div class="col-xs-6 col-md-6 " style="height: 20em;">
+    <h2>{{ title }}</h2>
+    <h6>
+        <span class="label label-warning">玄幻</span>
+        <span class="label label-warning">梦如神机</span>
+        <span class="label label-warning">热血</span>
+        <span class="label label-warning">600万字</span>
+        <span class="label label-warning">30万热评</span>
+    </h6>
+
+    <p>{{ summary }}</p>
+</div>
